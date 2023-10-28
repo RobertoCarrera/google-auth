@@ -1,0 +1,21 @@
+<div class="container vh-100">
+    <div class="row h-100 d-flex justify-content-center align-items-center">
+        <div class="col-8 bg-success">
+            <h2 class="m-0 text-center">Main</h2>
+        </div>
+        <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center">
+                <h3>User name: </h3>
+                <h6>{{user_info.given_name}}</h6>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h3>Email: </h3>
+                <h6>{{user_info.email}}</h6>
+            </div>
+            <img src="{{user_info.picture}}" alt="">
+        </div>
+        <div class="col-6">
+            <button (click)="logout()">Logout</button>
+        </div>
+    </div>
+</div>
